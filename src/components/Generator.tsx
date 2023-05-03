@@ -23,17 +23,17 @@ const Generator = () => {
 
 	return (
 		<div className='flex-col '>
-			<h3 className='font-bold text-2xl '>Генератор случайных паролей</h3>
-			<span className='text-sm flex justify-center align-center max-w-md	 mt-2'>
+			<h3 className='font-bold text-5xl '>Генератор случайных паролей</h3>
+			<span className='text-lg flex align-center max-w-2xl mt-2 ml-4'>
 				Создайте безопасный и надёжный пароль для любого вашего аккаунта.
 			</span>
-			<p className='text-sm font-bold m-0 max-w-md mb-2'>
+			<p className='text-lg font-bold  m-0 max-w-2xl mb-2 ml-4'>
 				Все сгенерированные пароли сохраняются локально и не отправляются на
 				сервер.
 			</p>
-			<div className='flex-col gap-4'>
+			<div className='flex-col gap-4 mx-20'>
 				<input
-					className='mx-4 bg-gray-300 border-l rounded-sm pl-2 w-60'
+					className='mx-4 text-xl bg-gray-300 border-l rounded-sm pl-2 w-68'
 					value={pass.length ? pass : 'Параметры не заданы!'}
 					disabled={true}
 				/>{' '}
@@ -57,9 +57,9 @@ const Generator = () => {
 				</button>
 			</div>
 			<div className='flex my-5 justify-between'>
-				<div className='w-64 '>
-					<h4 className='font-bold'>Типы символов</h4>
-					<div className=' grid grid-cols-2 grid-rows-2	gap-1'>
+				<div className='w-70 '>
+					<h4 className='font-bold text-lg'>Типы символов</h4>
+					<div className='grid grid-cols-2 grid-rows-2	gap-1'>
 						<Checkbox
 							title={
 								<>
@@ -103,9 +103,9 @@ const Generator = () => {
 						/>
 					</div>
 				</div>
-				<div className='w-64'>
-					<h4 className='font-bold'>Длина пароля</h4>
-					<label>
+				<div className='w-80'>
+					<h4 className='font-bold text-lg'>Длина пароля</h4>
+					<label className='text-lg'>
 						<input
 							type='range'
 							id='length'

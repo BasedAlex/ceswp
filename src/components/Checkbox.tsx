@@ -18,7 +18,7 @@ const Checkbox = ({
 }: Props) => {
 	return (
 		<>
-			<label className='text-xs'>
+			<label className='text-md'>
 				<input
 					type='checkbox'
 					id={name}
